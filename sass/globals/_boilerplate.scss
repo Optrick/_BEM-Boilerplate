@@ -1,0 +1,46 @@
+@use '../util' as u;
+
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+
+}
+
+body {
+    background-color: var(--body-color);
+    margin: 0;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    li,
+    p {
+        color: var(--texte-color);
+        font-family: u.$font;
+    }
+}
+
+header,
+main,
+aside,
+footer {
+    background-color: var(--background-color);
+    display: block;
+    //to remove or place inside layout
+    // padding: 5px 10px;
+    min-height: 15vh;
+
+    // to erase
+    border-bottom: 1px dashed grey;
+}
+
+
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}

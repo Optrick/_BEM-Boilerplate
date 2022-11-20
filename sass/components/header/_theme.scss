@@ -1,0 +1,11 @@
+@use '../../util' as theme;
+
+header {
+    nav {
+
+
+        a {
+            color: theme.$theme-header-nav-a;
+        }
+    }
+}

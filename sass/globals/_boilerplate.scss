@@ -27,6 +27,10 @@ body {
         text-decoration: none;
         list-style: none;
     }
+
+    .hide {
+        display: none;
+    }
 }
 
 header,
@@ -35,9 +39,6 @@ aside,
 footer {
     background-color: var(--background-color);
     display: block;
-    //to remove or place inside layout
-    // padding: 5px 10px;
-    min-height: 15vh;
 
 }
 

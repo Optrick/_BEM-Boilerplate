@@ -9,7 +9,7 @@
     // max-width: 1000px;
     width: min(100%, 1000px);
     margin-inline: auto;
-    gap: u.rem(5);
+    gap: u.rem(10);
 
     @include u.breakpoint(medium) {
         grid-template-columns: 1fr 3fr;
@@ -24,14 +24,23 @@
     // &__aside,
     &__header,
     &__footer {
-        padding: u.rem(20);
+        padding: u.rem(30);
+
+        @include u.breakpoint(medium) {
+            padding: u.rem(20);
+        }
     }
 
     &__header {
         background-color: var(--background-color);
 
         //layout purpose
-        width: min(100% - u.rem(5), 1000px);
+        width: calc(100% - u.rem(40));
+
+        // @include u.breakpoint-down(small) {
+        //     width: min(100% - u.rem(5), 1000px);
+        // }
+
         margin-inline: auto;
         // display: grid;
         // grid-template-columns: 1fr;

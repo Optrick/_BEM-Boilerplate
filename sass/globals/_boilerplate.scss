@@ -22,6 +22,11 @@ body {
         color: var(--texte-color);
         font-family: u.$font;
     }
+
+    li {
+        text-decoration: none;
+        list-style: none;
+    }
 }
 
 header,

@@ -7,7 +7,7 @@
     background-color: var(--background-color);
     // width: 80vw;
     // max-width: 1000px;
-    width: min(100%, 1000px);
+    width: min(100% - u.rem(60), 1000px);
     margin-inline: auto;
     gap: u.rem(10);
 
@@ -35,11 +35,10 @@
         background-color: var(--background-color);
 
         //layout purpose
-        width: calc(100% - u.rem(40));
+        // width: calc(100% - u.rem(40));
 
-        // @include u.breakpoint-down(small) {
-        //     width: min(100% - u.rem(5), 1000px);
-        // }
+        width: min(100% - u.rem(60), 1000px);
+
 
         margin-inline: auto;
         // display: grid;
@@ -81,7 +80,7 @@
         background-color: var(--background-color);
 
         //layout purpose
-        width: min(100% - u.rem(5), 1000px);
+        width: min(100% - u.rem(60), 1000px);
         margin-inline: auto;
     }
 }

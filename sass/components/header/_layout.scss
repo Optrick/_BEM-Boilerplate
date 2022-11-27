@@ -15,11 +15,12 @@ header {
 
     .exergue {
         padding: 75px 0;
-        max-width: 90ch;
+        //
+        max-width: u.$max-width-content-desk;
         margin-inline: auto;
 
         @include u.breakpoint(medium) {
-            padding: 200px 0;
+            padding: 50px 0;
         }
     }
 }

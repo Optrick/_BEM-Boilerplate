@@ -1,11 +1,11 @@
 @use 'breakpoints' as u;
 
 .flow>*+* {
-    margin-top: 1rem !important;
+    margin-top: 1rem;
 }
 
 @include u.breakpoint(medium) {
     .flow>*+* {
-        margin-top: 1.5rem !important;
+        margin-top: 1.5rem;
     }
 }

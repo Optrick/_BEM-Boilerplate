@@ -1,11 +1,12 @@
 @use '../../util' as theme;
 
 header {
-    nav {
 
+    a {
+        color: theme.$theme-header-nav-a;
 
-        a {
-            color: theme.$theme-header-nav-a;
+        &:hover {
+            color: theme.$theme-header-nav-ahover;
         }
     }
 }

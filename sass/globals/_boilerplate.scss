@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-color: var(--body-color);
+    background-color: u.$body-bgcolor;
     margin: 0;
 
     h1,
@@ -18,9 +18,31 @@ body {
     h5,
     h6,
     li,
-    p {
-        color: var(--texte-color);
-        font-family: u.$font;
+    p,
+    blockquote {
+        line-height: u.$line-height-global;
+        margin: 0;
+        text-rendering: optimizeLegibility;
+    }
+
+    h1,
+    h2,
+    h4,
+    h5,
+    h6 {
+        font-family: u.$font-serif;
+        color: u.$theme-title-color;
+    }
+
+    h3,
+    p,
+    li,
+    blockquote {
+        color: u.$theme-color-content;
+        font-family: u.$font-sans;
+        line-height: u.$line-height-global;
+        margin: 0;
+        letter-spacing: 0.025em;
     }
 
     li {
@@ -31,13 +53,22 @@ body {
     .hide {
         display: none;
     }
+
+    .fullwidth {
+        position: relative;
+        right: 50%;
+        left: 50%;
+        width: 100vw;
+        margin-right: -50vw;
+        margin-left: -50vw;
+    }
 }
 
 header,
 main,
 aside,
 footer {
-    background-color: var(--background-color);
+    background-color: u.$theme-bgcolor-body;
     display: block;
 
 }
@@ -53,4 +84,8 @@ footer {
 *::before,
 *::after {
     box-sizing: inherit;
+}
+
+picture {
+    display: block;
 }

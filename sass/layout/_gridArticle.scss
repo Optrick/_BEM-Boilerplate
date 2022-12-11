@@ -36,7 +36,7 @@
     }
 
     &__section-head,
-    &__section-foot {
+    &__section-footer {
         background: u.$theme-bgcolor-section-article;
     }
 
@@ -64,9 +64,14 @@
         }
     }
 
-    &__section-foot {
+    &__section-footer {
         position: relative;
-        min-height: 75px;
+        min-height: 150px;
+
+        @include u.breakpoint(medium) {
+            min-height: 75px;
+
+        }
 
         h4,
         ul,
@@ -78,8 +83,12 @@
             display: flex;
             position: absolute;
             bottom: 0;
+            flex-direction: column;
 
+            @include u.breakpoint(medium) {
+                flex-direction: row;
 
+            }
 
             li:before,
             li:after {

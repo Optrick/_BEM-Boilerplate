@@ -20,7 +20,15 @@
 
 
 
-    &__main,
+    &__main {
+        padding-inline: u.rem(30);
+
+        @include u.breakpoint(medium) {
+            padding-inline: u.rem(20);
+        }
+    }
+
+
     // &__aside,
     &__header,
     &__footer {
@@ -45,12 +53,15 @@
         // grid-template-columns: 1fr;
     }
 
-    &__main {
-        background-color: rgba(0, 0, 64, 0.1);
-    }
+    // &__main {
+    //     background-color: rgba(0, 0, 64, 0.1);
+    // }
 
     &__aside {
-        background-color: rgba(1, 187, 14, 0.1);
+        // background-color: rgba(1, 187, 14, 0.1);
+        // border: 2px solid rgb(190, 190, 190);
+        border: 2px solid hsla(0, 0%, 100%, 1);
+        background-color: hsla(0, 0%, 100%, 1);
 
         @include u.breakpoint-down(small) {
             text-align: center;
@@ -58,18 +69,18 @@
     }
 
     &__widget {
-        padding: u.rem(8);
+        padding: u.rem(18);
 
         &.green {
             // @extend .grid__widget;
             // padding: u.rem(8);
-            background-color: hsl(120, 17%, 50%);
+            background-color: hsl(0, 0%, 100%, 0);
         }
 
         &.violet {
             // @extend .grid__widget;
             // padding: u.rem(8);
-            background-color: hsl(303, 17%, 50%);
+            background-color: hsl(0, 0%, 100%, 0);
         }
     }
 
